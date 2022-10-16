@@ -29,7 +29,7 @@ const Footer = () => (
         <Contact>
           <Icons>
             <A href="https://github.com/web3-analytic"><GithubIcon /></A>
-            <A href="https://twitter.com/ParetoAnalytics"><TwitterIcon /></A>
+            <A href="https://twitter.com/Web3Analytic"><TwitterIcon /></A>
             <A href="mailto:team@paretolabs.xyz"><MessageIcon /></A>
           </Icons>
           <ListITitle>Get In Touch</ListITitle>

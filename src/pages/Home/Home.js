@@ -114,7 +114,7 @@ const Home = () => {
               <Button color="green">Coming soon!</Button>
               <HeaderIcons>
                 <A href="https://github.com/web3-analytic"><GithubIcon /></A>
-                <A href="https://twitter.com/ParetoAnalytics"><TwitterIcon /></A>
+                <A href="https://twitter.com/Web3Analytic"><TwitterIcon /></A>
                 <A href="mailto:team@paretolabs.xyz"><MessageIcon /></A>
               </HeaderIcons>
             </HomeHeaderWrapper>
