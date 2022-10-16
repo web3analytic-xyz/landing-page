@@ -10,18 +10,24 @@ import {
   HomeHeaderWrapper,
   Input,
   InputWrapper,
-  LastSection,
-  LastSectionBox,
-  LastSectionBoxDesc,
-  LastSectionBoxImg,
-  LastSectionBoxTitle,
+  ProductSection,
+  ProductSectionBox,
+  ProductSectionBoxDesc,
+  ProductSectionBoxImg,
+  ProductSectionBoxTitle,
+  ProductWrapper,
+  UseCaseSection,
+  UseCaseSectionBox,
+  UseCaseSectionBoxDesc,
+  UseCaseSectionBoxImg,
+  UseCaseSectionBoxTitle,
+  UseCaseWrapper,
   SectionData,
   SectionImg,
   SectionWrapper,
-  ProductWrapper,
+  FullPageSectionWrapper,
   SignUpSection,
   SignUpTitle,
-  Wrapper,
   A,
   Ul,
   LiPurple,
@@ -35,7 +41,7 @@ import MessageIcon from '../../Icons/MessageIcon';
 import Research from '../../assets/images/research.png';
 import Glass from '../../assets/images/icon-glass.png';
 import Lightning from '../../assets/images/icon-lightning.png';
-import Pareto from '../../assets/images/pareto.png';
+import Arrow from '../../assets/images/icon-arrow.png';
 import Modal from '../../components/shared/Modal/Modal';
 
 const Home = () => {
@@ -107,20 +113,20 @@ const Home = () => {
           </HeaderWrapper>
           <HeaderImg src={Community} />
         </HeaderSection>
-        <ProductWrapper>
+        <FullPageSectionWrapper>
           <SectionTitle>Our Products</SectionTitle>
           <SectionDesc>Get <b>insights about on-chain wallet preferences and behaviors</b> of web3 users, and communicate with them directly. Most importantly, do this all whilst respecting user privacy.
           </SectionDesc>
-          <LastSection>
-            <LastSectionBox>
-              <LastSectionBoxImg src={Glass} />
-              <Wrapper>
-                <LastSectionBoxTitle>Actionable User Analytics</LastSectionBoxTitle>
-                <LastSectionBoxDesc>Data insights on cross-chain wallet behavior to help you make better decisions for your business. 
-                </LastSectionBoxDesc>
+          <ProductSection>
+            <ProductSectionBox>
+              <ProductSectionBoxImg src={Glass} />
+              <ProductWrapper>
+                <ProductSectionBoxTitle>Actionable User Analytics</ProductSectionBoxTitle>
+                <ProductSectionBoxDesc>Data insights on cross-chain wallet behavior to help you make better decisions for your business. 
+                </ProductSectionBoxDesc>
                 <br/>
-                <LastSectionBoxDesc>Today, a DeFi protocol might airdrop all dydx users. With Web3Analytic, your airdrop can be <b>more precise</b>:
-                </LastSectionBoxDesc>
+                <ProductSectionBoxDesc>Today, a DeFi protocol might airdrop all dydx users. With Web3Analytic, your airdrop can be <b>more precise</b>:
+                </ProductSectionBoxDesc>
                 <br/>
                 <Ul>
                   <LiPurple>Protocol X users</LiPurple>
@@ -128,24 +134,63 @@ const Home = () => {
                   <LiPurple>Have not airdrop farmed</LiPurple>
                   <LiPurple>Likely to explore other protocols</LiPurple>
                 </Ul>
-              </Wrapper>
-            </LastSectionBox>
-            <LastSectionBox>
-              <LastSectionBoxImg src={Lightning} />
-              <Wrapper>
-                <LastSectionBoxTitle>On-Chain Communication</LastSectionBoxTitle>
-                <LastSectionBoxDesc>Getting in touch with your users does not have to be a challenge. With Web3Analytic:
-                </LastSectionBoxDesc>
+              </ProductWrapper>
+            </ProductSectionBox>
+            <ProductSectionBox>
+              <ProductSectionBoxImg src={Lightning} />
+              <ProductWrapper>
+                <ProductSectionBoxTitle>On-Chain Communication</ProductSectionBoxTitle>
+                <ProductSectionBoxDesc>Getting in touch with your users does not have to be a challenge. With Web3Analytic:
+                </ProductSectionBoxDesc>
                 <br/>
                 <Ul>
                   <LiOrange><b>Send critical updates.</b> Message your community members so they don’t miss important notification.</LiOrange>
                   <LiOrange><b>Get user feedback.</b> Build exactly for your user&apos;s needs!</LiOrange>
                   <LiOrange><b>Find new users.</b> Share unlockable NFTs to encourage protocol engagement. </LiOrange>
                 </Ul>
-              </Wrapper>
-            </LastSectionBox>
-          </LastSection>
-        </ProductWrapper>
+              </ProductWrapper>
+            </ProductSectionBox>
+          </ProductSection>
+        </FullPageSectionWrapper>
+        <FullPageSectionWrapper>
+          <SectionTitle>Use Cases</SectionTitle>
+          <SectionDesc>A few of the popular applications of Web3Analytic:
+          </SectionDesc>
+          <UseCaseSection>
+            <UseCaseSectionBox>
+              <UseCaseSectionBoxImg src={Arrow} />
+              <UseCaseWrapper>
+                <UseCaseSectionBoxTitle>Know Your Community</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>See what protocols your users are using to inform who you partner with and where you expand to.
+                </UseCaseSectionBoxDesc>
+              </UseCaseWrapper>
+            </UseCaseSectionBox>
+            <UseCaseSectionBox>
+              <UseCaseSectionBoxImg src={Arrow} />
+              <UseCaseWrapper>
+                <UseCaseSectionBoxTitle>Air Drops</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>Don&apos;t just air drop all users, let us find the power users and avoid the air drop farmers.
+                </UseCaseSectionBoxDesc>
+              </UseCaseWrapper>
+            </UseCaseSectionBox>
+            <UseCaseSectionBox>
+              <UseCaseSectionBoxImg src={Arrow} />
+              <UseCaseWrapper>
+                <UseCaseSectionBoxTitle>Community Communication</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>Ensure your community receives important updates and get their feedback on your use case.
+                </UseCaseSectionBoxDesc>
+              </UseCaseWrapper>
+            </UseCaseSectionBox>
+            <UseCaseSectionBox>
+              <UseCaseSectionBoxImg src={Arrow} />
+              <UseCaseWrapper>
+                <UseCaseSectionBoxTitle>Grow Your Community</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>We offer precision targeting and marketing to potential users. Stop spraying and praying! 
+                </UseCaseSectionBoxDesc>
+              </UseCaseWrapper>
+            </UseCaseSectionBox>
+          </UseCaseSection>
+        </FullPageSectionWrapper>
         <SectionWrapper>
           <SectionImg src={Research} />
           <SectionData>

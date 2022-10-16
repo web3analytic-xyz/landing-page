@@ -78,7 +78,7 @@ export const SectionImg = styled.img`
     };
 `;
 
-export const ProductWrapper = styled.div`
+export const FullPageSectionWrapper = styled.div`
     gap: 100px;
 `;
 
@@ -191,7 +191,9 @@ export const Value = styled.p`
     }
 `;
 
-export const LastSection = styled.div`
+// Product section styling
+
+export const ProductSection = styled.div`
     display: grid;
     margin: auto;
     margin-top: 80px;
@@ -214,10 +216,9 @@ export const LastSection = styled.div`
         width: 90%;
         gap: 200px;
     };
-
 `;
 
-export const LastSectionBox = styled.div`
+export const ProductSectionBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,7 +234,7 @@ export const LastSectionBox = styled.div`
     text-align: center; */
 `;
 
-export const LastSectionBoxImg = styled.img`
+export const ProductSectionBoxImg = styled.img`
     width: 120px;
     height: 120px;
     @media ${devices.tablet} {
@@ -246,15 +247,7 @@ export const LastSectionBoxImg = styled.img`
     }
 `;
 
-export const Wrapper = styled.div`
-    margin: 32px 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-`;
-
-export const LastSectionBoxTitle = styled.h1`
+export const ProductSectionBoxTitle = styled.h1`
     font-size: 24px;
     text-align: center;
     font-family: 'Inter-Bold';
@@ -273,10 +266,108 @@ export const LastSectionBoxTitle = styled.h1`
         font-size: 32px;
     }
 `;
-export const LastSectionBoxDesc = styled.p`
+export const ProductSectionBoxDesc = styled.p`
     font-size: 24px;
     text-align: left;
 `;
+
+// Usecase section styling
+
+export const UseCaseSection = styled.div`
+    display: grid;
+    margin: auto;
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    width: 100%;
+    @media ${devices.mobileL} {
+        width: 85%;
+    }
+    @media ${devices.tablet} {
+        grid-template-columns: 1fr 1fr;
+        width: 95%;
+        gap: 35px;
+    }
+    @media ${devices.laptop} {
+        width: 90%;
+        gap: 50px;
+    }
+    @media ${devices.laptopL} {
+        width: 90%;
+        gap: 50px;
+    };
+
+`;
+
+export const UseCaseSectionBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    & > button {
+        margin-top: auto;
+    }
+    /* justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; */
+`;
+
+export const UseCaseSectionBoxImg = styled.img`
+    width: 80px;
+    height: 80px;
+    @media ${devices.tablet} {
+        width: 80px;
+        height: 80px;
+    }
+    @media ${devices.laptopL} {
+        width: 80px;
+        height: 80px;
+    }
+`;
+
+export const UseCaseSectionBoxTitle = styled.h1`
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Inter-Bold';
+    margin-bottom: 32px;
+    @media ${devices.mobileL} {
+        font-size: 26px;
+    }
+    @media ${devices.tablet} {
+       font-size: 28px;
+    }
+    @media ${devices.laptop} {
+       font-size: 30px;
+    }
+    @media ${devices.laptopL} {
+        font-size: 32px;
+    }
+`;
+export const UseCaseSectionBoxDesc = styled.p`
+    font-size: 24px;
+    text-align: center;
+`;
+
+export const UseCaseWrapper = styled.div`
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+`;
+
+
+export const ProductWrapper = styled.div`
+    margin: 32px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+`;
+
 
 export const SignUpSection = styled.div`
     display: flex;
