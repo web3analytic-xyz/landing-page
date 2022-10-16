@@ -26,7 +26,7 @@ export const LiPurple = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   @media ${devices.mobileL} {
     font-size: 18px;
@@ -51,7 +51,7 @@ export const LiOrange = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   @media ${devices.mobileL} {
     font-size: 18px;
@@ -79,7 +79,7 @@ export const LiTriangle1 = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 60px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   @media ${devices.mobileL} {
     font-size: 18px;
@@ -103,7 +103,7 @@ export const LiTriangle2 = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 60px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   @media ${devices.mobileL} {
     font-size: 18px;
@@ -127,7 +127,7 @@ export const LiTriangle3 = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 60px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   @media ${devices.mobileL} {
     font-size: 18px;
@@ -377,7 +377,7 @@ export const ProductSectionBoxTitle = styled.h1`
     }
 `;
 export const ProductSectionBoxDesc = styled.p`
-    font-size: 24px;
+    font-size: 18px;
     text-align: left;
     line-height: 1.5;
     margin-top: 25px;
@@ -478,12 +478,12 @@ export const UseCaseSectionBoxTitle = styled.h1`
     }
 `;
 export const UseCaseSectionBoxDesc = styled.p`
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     line-height: 1.5;
     margin-top: 25px;
     @media ${devices.mobileL} {
-        font-size: 18px;
+        font-size: 20px;
     }
     @media ${devices.tablet} {
       font-size: 20px;
