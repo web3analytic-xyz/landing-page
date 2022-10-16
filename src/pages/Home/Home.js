@@ -133,11 +133,11 @@ const Home = () => {
                 <ProductSectionBoxDesc>Data insights on cross-chain wallet behavior to help you make better decisions for your business. 
                 </ProductSectionBoxDesc>
                 <br/>
-                <ProductSectionBoxDesc>Today, a DeFi protocol might airdrop all dydx users. With Web3Analytic, your airdrop can be <b>more precise</b>:
+                <ProductSectionBoxDesc>Today, a DeFi protocol might airdrop all GMX users. With Web3Analytic, your airdrop can be <b>more precise</b>:
                 </ProductSectionBoxDesc>
                 <br/>
                 <Ul>
-                  <LiPurple>Protocol X users</LiPurple>
+                  <LiPurple>GMX users</LiPurple>
                   <LiPurple>With at least $100k tx volume last month</LiPurple>
                   <LiPurple>Have not airdrop farmed</LiPurple>
                   <LiPurple>Likely to explore other protocols</LiPurple>
@@ -169,15 +169,15 @@ const Home = () => {
               <UseCaseSectionBoxImg src={Arrow} />
               <UseCaseWrapper>
                 <UseCaseSectionBoxTitle>Know Your Community</UseCaseSectionBoxTitle>
-                <UseCaseSectionBoxDesc>See what protocols your users are using to inform who you partner with and where you expand to.
+                <UseCaseSectionBoxDesc>See what protocols your users are using to inform your partnerships and expansion strategy.
                 </UseCaseSectionBoxDesc>
               </UseCaseWrapper>
             </UseCaseSectionBox>
             <UseCaseSectionBox>
               <UseCaseSectionBoxImg src={Arrow} />
               <UseCaseWrapper>
-                <UseCaseSectionBoxTitle>Air Drops</UseCaseSectionBoxTitle>
-                <UseCaseSectionBoxDesc>Don&apos;t just air drop all users, let us find the power users and avoid the air drop farmers.
+                <UseCaseSectionBoxTitle>Airdrops</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>Don&apos;t just airdrop all users, let us find the power users and avoid the airdrop farmers.
                 </UseCaseSectionBoxDesc>
               </UseCaseWrapper>
             </UseCaseSectionBox>
@@ -185,7 +185,7 @@ const Home = () => {
               <UseCaseSectionBoxImg src={Arrow} />
               <UseCaseWrapper>
                 <UseCaseSectionBoxTitle>Community Communication</UseCaseSectionBoxTitle>
-                <UseCaseSectionBoxDesc>Ensure your community receives important updates and get their feedback on your use case.
+                <UseCaseSectionBoxDesc>Ensure your community receives important updates and get their feedback on your product.
                 </UseCaseSectionBoxDesc>
               </UseCaseWrapper>
             </UseCaseSectionBox>
@@ -201,7 +201,7 @@ const Home = () => {
         </FullPageSectionWrapper>
         <FullPageSectionWrapper>
           <SectionTitle>How does Web3Analytic work?</SectionTitle>
-          <SectionDesc>We take on-chain data and use machine learning techniques to provide you with actionable and predictive insights about on-chain users using three data layers:
+          <SectionDesc>Using on-chain data and machine learning techniques, we provide actionable and predictive insights about on-chain users, using three data layers:
           </SectionDesc>
           <AlgorithmWrapper>
             <SectionData>
