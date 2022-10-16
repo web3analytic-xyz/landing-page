@@ -10,29 +10,46 @@ import {
   HomeHeaderWrapper,
   Input,
   InputWrapper,
-  LastSection,
-  LastSectionBox,
-  LastSectionBoxDesc,
-  LastSectionBoxImg,
-  LastSectionBoxTitle,
+  ProductSection,
+  ProductSectionBox,
+  ProductSectionBoxDesc,
+  ProductSectionBoxImg,
+  ProductSectionBoxTitle,
+  ProductWrapper,
+  UseCaseSection,
+  UseCaseSectionBox,
+  UseCaseSectionBoxDesc,
+  UseCaseSectionBoxImg,
+  UseCaseSectionBoxTitle,
+  UseCaseWrapper,
+  AlgorithmSection,
+  AlgorithmSectionBox,
+  AlgorithmWrapper,
   SectionData,
   SectionImg,
   SectionWrapper,
+  FullPageSectionWrapper,
   SignUpSection,
   SignUpTitle,
-  Wrapper,
   A,
+  Ul,
+  UlTriangle,
+  LiPurple,
+  LiOrange,
+  LiTriangle1,
+  LiTriangle2,
+  LiTriangle3,
 } from './styles';
-import Group from '../../assets/images/Group.png';
+import Community from '../../assets/images/community.png';
 import Button from '../../components/shared/Button/Button';
 import GithubIcon from '../../Icons/GithubIcon';
 import TwitterIcon from '../../Icons/TwitterIcon';
 import MessageIcon from '../../Icons/MessageIcon';
-import Sustainable from '../../assets/images/sustainable.png';
 import Research from '../../assets/images/research.png';
-import Portfolio from '../../assets/images/portfolio.png';
-import Defi from '../../assets/images/defi.png';
-import Pareto from '../../assets/images/pareto.png';
+import Glass from '../../assets/images/icon-glass.png';
+import Lightning from '../../assets/images/icon-lightning.png';
+import Arrow from '../../assets/images/icon-arrow.png';
+import Pyramid from '../../assets/images/pyramid.png';
 import Modal from '../../components/shared/Modal/Modal';
 
 const Home = () => {
@@ -89,69 +106,140 @@ const Home = () => {
         <Modal open={open} setOpen={(val) => setOpen(val)} failed={failed} />
         <HeaderSection>
           <HeaderWrapper>
-            <SectionTitle>Trade Decentralized Options</SectionTitle>
+            <SectionTitle>Helping You Find Your Web3 Users</SectionTitle>
             <SectionDesc>
-              Arbitrum Nitro&apos;s First Options Order Book with Cross-Protocol Margining
+            Web3Analytic takes a data-driven approach to helping protocols find and engage with users.
             </SectionDesc>
             <HomeHeaderWrapper>
               <Button color="green">Coming soon!</Button>
               <HeaderIcons>
-                <A href="https://github.com/pareto-xyz"><GithubIcon /></A>
-                <A href="https://twitter.com/Paretoxyz"><TwitterIcon /></A>
+                <A href="https://github.com/web3-analytic"><GithubIcon /></A>
+                <A href="https://twitter.com/ParetoAnalytics"><TwitterIcon /></A>
                 <A href="mailto:team@paretolabs.xyz"><MessageIcon /></A>
               </HeaderIcons>
             </HomeHeaderWrapper>
           </HeaderWrapper>
-          <HeaderImg src={Group} />
+          <HeaderImg src={Community} />
         </HeaderSection>
-        <SectionWrapper>
-          <SectionImg src={Sustainable} />
-          <SectionData>
-            <SectionTitle>Trade crypto options with best-in-class leverage</SectionTitle>
-            <SectionDesc>Struggling to find capital efficient options on-chain? Look no further than Pareto.
-            </SectionDesc>
-          </SectionData>
-        </SectionWrapper>
-        <SectionWrapper>
-          <SectionData>
-            <SectionTitle>Delta hedging with one click</SectionTitle>
-            <SectionDesc>Access tools and strategies previously only available to sophisticated investors.
-            </SectionDesc>
-          </SectionData>
-          <SectionImg src={Portfolio} reverse />
-        </SectionWrapper>
+        <FullPageSectionWrapper>
+          <SectionTitle>Our Products</SectionTitle>
+          <SectionDesc>Get <b>insights about on-chain wallet preferences and behaviors</b> of web3 users, and communicate with them directly. Most importantly, do this all whilst respecting user privacy.
+          </SectionDesc>
+          <ProductSection>
+            <ProductSectionBox>
+              <ProductSectionBoxImg src={Glass} />
+              <ProductWrapper>
+                <ProductSectionBoxTitle>Actionable User Analytics</ProductSectionBoxTitle>
+                <ProductSectionBoxDesc>Data insights on cross-chain wallet behavior to help you make better decisions for your business. 
+                </ProductSectionBoxDesc>
+                <br/>
+                <ProductSectionBoxDesc>Today, a DeFi protocol might airdrop all dydx users. With Web3Analytic, your airdrop can be <b>more precise</b>:
+                </ProductSectionBoxDesc>
+                <br/>
+                <Ul>
+                  <LiPurple>Protocol X users</LiPurple>
+                  <LiPurple>With at least $100k tx volume last month</LiPurple>
+                  <LiPurple>Have not airdrop farmed</LiPurple>
+                  <LiPurple>Likely to explore other protocols</LiPurple>
+                </Ul>
+              </ProductWrapper>
+            </ProductSectionBox>
+            <ProductSectionBox>
+              <ProductSectionBoxImg src={Lightning} />
+              <ProductWrapper>
+                <ProductSectionBoxTitle>On-Chain Communication</ProductSectionBoxTitle>
+                <ProductSectionBoxDesc>Getting in touch with your users does not have to be a challenge. With Web3Analytic:
+                </ProductSectionBoxDesc>
+                <br/>
+                <Ul>
+                  <LiOrange><b>Send critical updates.</b> Message your community members so they don’t miss important notification.</LiOrange>
+                  <LiOrange><b>Get user feedback.</b> Build exactly for your user&apos;s needs!</LiOrange>
+                  <LiOrange><b>Find new users.</b> Share unlockable NFTs to encourage protocol engagement. </LiOrange>
+                </Ul>
+              </ProductWrapper>
+            </ProductSectionBox>
+          </ProductSection>
+        </FullPageSectionWrapper>
+        <FullPageSectionWrapper>
+          <SectionTitle>Use Cases</SectionTitle>
+          <SectionDesc>A few of the popular applications of Web3Analytic:
+          </SectionDesc>
+          <UseCaseSection>
+            <UseCaseSectionBox>
+              <UseCaseSectionBoxImg src={Arrow} />
+              <UseCaseWrapper>
+                <UseCaseSectionBoxTitle>Know Your Community</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>See what protocols your users are using to inform who you partner with and where you expand to.
+                </UseCaseSectionBoxDesc>
+              </UseCaseWrapper>
+            </UseCaseSectionBox>
+            <UseCaseSectionBox>
+              <UseCaseSectionBoxImg src={Arrow} />
+              <UseCaseWrapper>
+                <UseCaseSectionBoxTitle>Air Drops</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>Don&apos;t just air drop all users, let us find the power users and avoid the air drop farmers.
+                </UseCaseSectionBoxDesc>
+              </UseCaseWrapper>
+            </UseCaseSectionBox>
+            <UseCaseSectionBox>
+              <UseCaseSectionBoxImg src={Arrow} />
+              <UseCaseWrapper>
+                <UseCaseSectionBoxTitle>Community Communication</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>Ensure your community receives important updates and get their feedback on your use case.
+                </UseCaseSectionBoxDesc>
+              </UseCaseWrapper>
+            </UseCaseSectionBox>
+            <UseCaseSectionBox>
+              <UseCaseSectionBoxImg src={Arrow} />
+              <UseCaseWrapper>
+                <UseCaseSectionBoxTitle>Grow Your Community</UseCaseSectionBoxTitle>
+                <UseCaseSectionBoxDesc>We offer precision targeting and marketing to potential users. Stop spraying and praying! 
+                </UseCaseSectionBoxDesc>
+              </UseCaseWrapper>
+            </UseCaseSectionBox>
+          </UseCaseSection>
+        </FullPageSectionWrapper>
+        <FullPageSectionWrapper>
+          <SectionTitle>How does Web3Analytic work?</SectionTitle>
+          <SectionDesc>We take on-chain data and use machine learning techniques to provide you with actionable and predictive insights about on-chain users using three data layers:
+          </SectionDesc>
+          <AlgorithmWrapper>
+            <SectionData>
+              <AlgorithmSection>
+                <AlgorithmSectionBox>
+                  <UlTriangle>
+                    <LiTriangle3><b>Layer 3</b>&emsp;Use AI models to predict preferences, cluster similar users, and infer hidden insights.
+                    </LiTriangle3>
+                  </UlTriangle>
+                </AlgorithmSectionBox>
+                <AlgorithmSectionBox>
+                  <UlTriangle>
+                    <LiTriangle2>
+                    <b>Layer 2</b>&emsp;Knowledge graph of Web3 users to store recent actions, choices, and behavior. 
+                    </LiTriangle2>
+                  </UlTriangle>
+                </AlgorithmSectionBox>
+                <AlgorithmSectionBox>
+                  <UlTriangle>
+                    <LiTriangle1><b>Layer 1</b>&emsp;Raw transaction data from L1, L2, and App chains. Updated live to stay in sync.
+                    </LiTriangle1>
+                  </UlTriangle>
+                </AlgorithmSectionBox>
+              </AlgorithmSection>
+            </SectionData>
+            <SectionImg src={Pyramid} />
+          </AlgorithmWrapper>
+        </FullPageSectionWrapper>
         <SectionWrapper>
           <SectionImg src={Research} />
           <SectionData>
-            <SectionTitle>Downside protection that&apos;s easy to use</SectionTitle>
-            <SectionDesc>Hedge your positions with options. Build your safety net today.
+            <SectionTitle>Who are we?</SectionTitle>
+            <SectionDesc>We are a team at the intersection of Web3 and AI, with a mix of native web3 builders and almost a decade of machine learning expertise. 
+            </SectionDesc>
+            <SectionDesc>If you&apos;re interested in learning more or are excited about our vision, please reach out!
             </SectionDesc>
           </SectionData>
         </SectionWrapper>
-        <LastSection>
-          <LastSectionBox>
-            <LastSectionBoxImg src={Defi} />
-            <Wrapper>
-              <LastSectionBoxTitle>Build cutting-edge technology in DeFi</LastSectionBoxTitle>
-              <LastSectionBoxDesc>Make composability and capital efficiency first class citizens in DeFi.
-              </LastSectionBoxDesc>
-            </Wrapper>
-            <A href="https://twitter.com/Paretoxyz">
-              <Button>Learn More</Button>
-            </A>
-          </LastSectionBox>
-          <LastSectionBox>
-            <LastSectionBoxImg src={Pareto} />
-            <Wrapper>
-              <LastSectionBoxTitle>Join the Pareto Community</LastSectionBoxTitle>
-              <LastSectionBoxDesc>Build the future of on-chain options with us.
-              </LastSectionBoxDesc>
-            </Wrapper>
-            <A href="https://twitter.com/Paretoxyz">
-              <Button>Learn More</Button>
-            </A>
-          </LastSectionBox>
-        </LastSection>
         <SignUpSection>
           <SignUpTitle>Sign up for Our Mailing List</SignUpTitle>
           <InputWrapper>
