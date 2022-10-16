@@ -1,4 +1,4 @@
-# Web3Analytic Landing Page
+# Landing Page
 
 Contains code for the Pareto landing page. Written in React.
 
