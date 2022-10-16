@@ -33,6 +33,7 @@ export const HeaderImg = styled.img`
     width: 100%;
     height: 100%;
     max-height: 350px;
+    max-width: 700px;
     grid-row: 1;
     @media ${devices.tablet} {
         grid-row: auto;
@@ -57,7 +58,7 @@ export const SectionDesc = styled.p`
 font-family: 'Inter-Regular';
 font-size: 16px;
 line-height: 1.5;
-margin-top: 15px;
+margin-top: 25px;
 @media ${devices.mobileL} {
     font-size: 18.5px;
 }
