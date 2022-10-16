@@ -26,6 +26,20 @@ export const LiPurple = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
+  font-size: 24px;
+  line-height: 1.5;
+  @media ${devices.mobileL} {
+    font-size: 18px;
+  }
+  @media ${devices.tablet} {
+    font-size: 20px;
+  }
+  @media ${devices.laptop} {
+      font-size: 22px;
+  }
+  @media ${devices.laptopL} {
+      font-size: 24px;
+  }
 `;
 
 export const LiOrange = styled.li`
@@ -37,6 +51,20 @@ export const LiOrange = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
+  font-size: 24px;
+  line-height: 1.5;
+  @media ${devices.mobileL} {
+    font-size: 18px;
+  }
+  @media ${devices.tablet} {
+    font-size: 20px;
+  }
+  @media ${devices.laptop} {
+      font-size: 22px;
+  }
+  @media ${devices.laptopL} {
+      font-size: 24px;
+  }
 `;
 export const UlTriangle = styled.ul`
   font-size: 24px;
@@ -51,6 +79,20 @@ export const LiTriangle1 = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 60px;
+  font-size: 24px;
+  line-height: 1.5;
+  @media ${devices.mobileL} {
+    font-size: 18px;
+  }
+  @media ${devices.tablet} {
+    font-size: 20px;
+  }
+  @media ${devices.laptop} {
+      font-size: 22px;
+  }
+  @media ${devices.laptopL} {
+      font-size: 24px;
+  }
 `;
 
 export const LiTriangle2 = styled.li`
@@ -61,6 +103,20 @@ export const LiTriangle2 = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 60px;
+  font-size: 24px;
+  line-height: 1.5;
+  @media ${devices.mobileL} {
+    font-size: 18px;
+  }
+  @media ${devices.tablet} {
+    font-size: 20px;
+  }
+  @media ${devices.laptop} {
+      font-size: 22px;
+  }
+  @media ${devices.laptopL} {
+      font-size: 24px;
+  }
 `;
 
 export const LiTriangle3 = styled.li`
@@ -71,6 +127,20 @@ export const LiTriangle3 = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 60px;
+  font-size: 24px;
+  line-height: 1.5;
+  @media ${devices.mobileL} {
+    font-size: 18px;
+  }
+  @media ${devices.tablet} {
+    font-size: 20px;
+  }
+  @media ${devices.laptop} {
+      font-size: 22px;
+  }
+  @media ${devices.laptopL} {
+      font-size: 24px;
+  }
 `;
 
 export const HomeHeaderWrapper = styled.div`
@@ -259,7 +329,10 @@ export const ProductSectionBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     & > button {
@@ -306,6 +379,20 @@ export const ProductSectionBoxTitle = styled.h1`
 export const ProductSectionBoxDesc = styled.p`
     font-size: 24px;
     text-align: left;
+    line-height: 1.5;
+    margin-top: 25px;
+    @media ${devices.mobileL} {
+        font-size: 20px;
+    }
+    @media ${devices.tablet} {
+       font-size: 22px;
+    }
+    @media ${devices.laptop} {
+        font-size: 24px;
+    }
+    @media ${devices.laptopL} {
+        font-size: 24px;
+    }
 `;
 
 export const ProductWrapper = styled.div`
@@ -377,7 +464,6 @@ export const UseCaseSectionBoxTitle = styled.h1`
     font-size: 24px;
     text-align: center;
     font-family: 'Inter-Bold';
-    margin-bottom: 32px;
     @media ${devices.mobileL} {
         font-size: 26px;
     }
@@ -394,6 +480,20 @@ export const UseCaseSectionBoxTitle = styled.h1`
 export const UseCaseSectionBoxDesc = styled.p`
     font-size: 24px;
     text-align: center;
+    line-height: 1.5;
+    margin-top: 25px;
+    @media ${devices.mobileL} {
+        font-size: 18px;
+    }
+    @media ${devices.tablet} {
+      font-size: 20px;
+    }
+    @media ${devices.laptop} {
+        font-size: 22px;
+    }
+    @media ${devices.laptopL} {
+        font-size: 24px;
+    }
 `;
 
 export const UseCaseWrapper = styled.div`
