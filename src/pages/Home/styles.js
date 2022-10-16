@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { devices } from '../../helpers/styles';
 import EllipsePurple from '../../assets/images/ellipse-purple.png';
 import EllipseOrange from '../../assets/images/ellipse-orange.png';
+import Triangle1 from '../../assets/images/triangle-1.png';
+import Triangle2 from '../../assets/images/triangle-2.png';
+import Triangle3 from '../../assets/images/triangle-3.png';
 
 export const Div = styled.div`
     display: grid;
@@ -34,6 +37,40 @@ export const LiOrange = styled.li`
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
+`;
+export const UlTriangle = styled.ul`
+  font-size: 24px;
+  align-items: left;
+  text-align: left;
+`;
+export const LiTriangle1 = styled.li`
+  list-style: none;
+  content: '';
+  display: inline-block;
+  background-image: url(${Triangle1});
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+`;
+
+export const LiTriangle2 = styled.li`
+  list-style: none;
+  content: '';
+  display: inline-block;
+  background-image: url(${Triangle2});
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+`;
+
+export const LiTriangle3 = styled.li`
+  list-style: none;
+  content: '';
+  display: inline-block;
+  background-image: url(${Triangle3});
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
 `;
 
 export const HomeHeaderWrapper = styled.div`
@@ -271,6 +308,14 @@ export const ProductSectionBoxDesc = styled.p`
     text-align: left;
 `;
 
+export const ProductWrapper = styled.div`
+    margin: 32px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+`;
+
 // Usecase section styling
 
 export const UseCaseSection = styled.div`
@@ -359,15 +404,44 @@ export const UseCaseWrapper = styled.div`
     align-items:center;
 `;
 
+// Algorithm section styling
 
-export const ProductWrapper = styled.div`
-    margin: 32px 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
+export const AlgorithmSection = styled.div`
+    display: grid;
+    margin: auto;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    width: 100%;
 `;
 
+export const AlgorithmSectionBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    & > button {
+        margin-top: auto;
+    }
+    /* justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; */
+`;
+
+export const AlgorithmWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 0px;
+    margin-top: 30px;
+    @media ${devices.tablet} {
+        grid-template-columns: 1fr 1fr;
+    };
+`;
+
+// Sign up portion
 
 export const SignUpSection = styled.div`
     display: flex;

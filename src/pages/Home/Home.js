@@ -22,6 +22,9 @@ import {
   UseCaseSectionBoxImg,
   UseCaseSectionBoxTitle,
   UseCaseWrapper,
+  AlgorithmSection,
+  AlgorithmSectionBox,
+  AlgorithmWrapper,
   SectionData,
   SectionImg,
   SectionWrapper,
@@ -30,8 +33,12 @@ import {
   SignUpTitle,
   A,
   Ul,
+  UlTriangle,
   LiPurple,
   LiOrange,
+  LiTriangle1,
+  LiTriangle2,
+  LiTriangle3,
 } from './styles';
 import Community from '../../assets/images/community.png';
 import Button from '../../components/shared/Button/Button';
@@ -42,6 +49,7 @@ import Research from '../../assets/images/research.png';
 import Glass from '../../assets/images/icon-glass.png';
 import Lightning from '../../assets/images/icon-lightning.png';
 import Arrow from '../../assets/images/icon-arrow.png';
+import Pyramid from '../../assets/images/pyramid.png';
 import Modal from '../../components/shared/Modal/Modal';
 
 const Home = () => {
@@ -190,6 +198,37 @@ const Home = () => {
               </UseCaseWrapper>
             </UseCaseSectionBox>
           </UseCaseSection>
+        </FullPageSectionWrapper>
+        <FullPageSectionWrapper>
+          <SectionTitle>How does Web3Analytic work?</SectionTitle>
+          <SectionDesc>We take on-chain data and use machine learning techniques to provide you with actionable and predictive insights about on-chain users using three data layers:
+          </SectionDesc>
+          <AlgorithmWrapper>
+            <SectionData>
+              <AlgorithmSection>
+                <AlgorithmSectionBox>
+                  <UlTriangle>
+                    <LiTriangle3><b>Layer 3</b>&emsp;Use AI models to predict preferences, cluster similar users, and infer hidden insights.
+                    </LiTriangle3>
+                  </UlTriangle>
+                </AlgorithmSectionBox>
+                <AlgorithmSectionBox>
+                  <UlTriangle>
+                    <LiTriangle2>
+                    <b>Layer 2</b>&emsp;Knowledge graph of Web3 users to store recent actions, choices, and behavior. 
+                    </LiTriangle2>
+                  </UlTriangle>
+                </AlgorithmSectionBox>
+                <AlgorithmSectionBox>
+                  <UlTriangle>
+                    <LiTriangle1><b>Layer 1</b>&emsp;Raw transaction data from L1, L2, and App chains. Updated live to stay in sync.
+                    </LiTriangle1>
+                  </UlTriangle>
+                </AlgorithmSectionBox>
+              </AlgorithmSection>
+            </SectionData>
+            <SectionImg src={Pyramid} />
+          </AlgorithmWrapper>
         </FullPageSectionWrapper>
         <SectionWrapper>
           <SectionImg src={Research} />
