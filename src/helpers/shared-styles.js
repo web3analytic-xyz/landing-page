@@ -44,9 +44,14 @@ export const HeaderImg = styled.img`
 export const LogoImg = styled.img`
     width: 25%;
     height: 100%;
-    max-height: 350px;
-    min-width: 200px;
+    max-height: 250px;
+    min-width: 100px;
     grid-row: 1;
+    @media ${devices.mobileL} {
+      grid-row: auto;
+        max-height: 250px;
+        min-width: 100px;
+    }
     @media ${devices.tablet} {
         grid-row: auto;
         max-height: 430px;

@@ -130,7 +130,7 @@ const Home = () => {
               <ProductSectionBoxImg src={Glass} />
               <ProductWrapper>
                 <ProductSectionBoxTitle>Actionable User Analytics</ProductSectionBoxTitle>
-                <ProductSectionBoxDesc>Data insights on cross-chain wallet behavior to help you make better decisions for your business. 
+                <ProductSectionBoxDesc>Data insights on cross-chain wallet behavior to help you make better decisions for your community. 
                 </ProductSectionBoxDesc>
                 <br/>
                 <ProductSectionBoxDesc>Today, a DeFi protocol might airdrop all GMX users. With Web3Analytic, your airdrop can be <b>more precise</b>:
@@ -152,8 +152,8 @@ const Home = () => {
                 </ProductSectionBoxDesc>
                 <br/>
                 <Ul>
-                  <LiOrange><b>Send critical updates.</b> Message your community members so they don’t miss important notification.</LiOrange>
-                  <LiOrange><b>Get user feedback.</b> Build exactly for your user&apos;s needs!</LiOrange>
+                  <LiOrange><b>Send critical updates.</b> Message your community members so they don&apos;t miss important notifications.</LiOrange>
+                  <LiOrange><b>Get user feedback.</b> Build exactly for your users&apos; needs!</LiOrange>
                   <LiOrange><b>Find new users.</b> Share unlockable NFTs to encourage protocol engagement. </LiOrange>
                 </Ul>
               </ProductWrapper>
