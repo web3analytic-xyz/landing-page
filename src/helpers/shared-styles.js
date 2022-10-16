@@ -16,11 +16,9 @@ export const HeaderSection = styled.div`
         margin-top: 64px;
     }
     @media ${devices.laptop} {
-        gap: 120px;
         margin-top: 100px;
     }
     @media ${devices.laptopL} {
-        gap: 130px;
         margin-top: 130px;
     }
 `;
@@ -29,9 +27,6 @@ export const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media ${devices.tablet} {
-        max-width: 430px;
-    }
 `;
 
 export const HeaderImg = styled.img`
@@ -64,13 +59,13 @@ font-size: 16px;
 line-height: 1.5;
 margin-top: 15px;
 @media ${devices.mobileL} {
-    font-size: 17px;
-}
-@media ${devices.tablet} {
     font-size: 18.5px;
 }
-@media ${devices.laptop} {
+@media ${devices.tablet} {
     font-size: 20px;
+}
+@media ${devices.laptop} {
+    font-size: 24px;
 }
 `;
 

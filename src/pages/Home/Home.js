@@ -18,20 +18,23 @@ import {
   SectionData,
   SectionImg,
   SectionWrapper,
+  ProductWrapper,
   SignUpSection,
   SignUpTitle,
   Wrapper,
   A,
+  Ul,
+  LiPurple,
+  LiOrange,
 } from './styles';
-import Group from '../../assets/images/Group.png';
+import Community from '../../assets/images/community.png';
 import Button from '../../components/shared/Button/Button';
 import GithubIcon from '../../Icons/GithubIcon';
 import TwitterIcon from '../../Icons/TwitterIcon';
 import MessageIcon from '../../Icons/MessageIcon';
-import Sustainable from '../../assets/images/sustainable.png';
 import Research from '../../assets/images/research.png';
-import Portfolio from '../../assets/images/portfolio.png';
-import Defi from '../../assets/images/defi.png';
+import Glass from '../../assets/images/icon-glass.png';
+import Lightning from '../../assets/images/icon-lightning.png';
 import Pareto from '../../assets/images/pareto.png';
 import Modal from '../../components/shared/Modal/Modal';
 
@@ -89,69 +92,70 @@ const Home = () => {
         <Modal open={open} setOpen={(val) => setOpen(val)} failed={failed} />
         <HeaderSection>
           <HeaderWrapper>
-            <SectionTitle>Trade Decentralized Options</SectionTitle>
+            <SectionTitle>Helping You Find Your Web3 Users</SectionTitle>
             <SectionDesc>
-              Arbitrum Nitro&apos;s First Options Order Book with Cross-Protocol Margining
+            Web3Analytic takes a data-driven approach to helping protocols find and engage with users.
             </SectionDesc>
             <HomeHeaderWrapper>
               <Button color="green">Coming soon!</Button>
               <HeaderIcons>
-                <A href="https://github.com/pareto-xyz"><GithubIcon /></A>
-                <A href="https://twitter.com/Paretoxyz"><TwitterIcon /></A>
+                <A href="https://github.com/web3-analytic"><GithubIcon /></A>
+                <A href="https://twitter.com/ParetoAnalytics"><TwitterIcon /></A>
                 <A href="mailto:team@paretolabs.xyz"><MessageIcon /></A>
               </HeaderIcons>
             </HomeHeaderWrapper>
           </HeaderWrapper>
-          <HeaderImg src={Group} />
+          <HeaderImg src={Community} />
         </HeaderSection>
-        <SectionWrapper>
-          <SectionImg src={Sustainable} />
-          <SectionData>
-            <SectionTitle>Trade crypto options with best-in-class leverage</SectionTitle>
-            <SectionDesc>Struggling to find capital efficient options on-chain? Look no further than Pareto.
-            </SectionDesc>
-          </SectionData>
-        </SectionWrapper>
-        <SectionWrapper>
-          <SectionData>
-            <SectionTitle>Delta hedging with one click</SectionTitle>
-            <SectionDesc>Access tools and strategies previously only available to sophisticated investors.
-            </SectionDesc>
-          </SectionData>
-          <SectionImg src={Portfolio} reverse />
-        </SectionWrapper>
+        <ProductWrapper>
+          <SectionTitle>Our Products</SectionTitle>
+          <SectionDesc>Get <b>insights about on-chain wallet preferences and behaviors</b> of web3 users, and communicate with them directly. Most importantly, do this all whilst respecting user privacy.
+          </SectionDesc>
+          <LastSection>
+            <LastSectionBox>
+              <LastSectionBoxImg src={Glass} />
+              <Wrapper>
+                <LastSectionBoxTitle>Actionable User Analytics</LastSectionBoxTitle>
+                <LastSectionBoxDesc>Data insights on cross-chain wallet behavior to help you make better decisions for your business. 
+                </LastSectionBoxDesc>
+                <br/>
+                <LastSectionBoxDesc>Today, a DeFi protocol might airdrop all dydx users. With Web3Analytic, your airdrop can be <b>more precise</b>:
+                </LastSectionBoxDesc>
+                <br/>
+                <Ul>
+                  <LiPurple>Protocol X users</LiPurple>
+                  <LiPurple>With at least $100k tx volume last month</LiPurple>
+                  <LiPurple>Have not airdrop farmed</LiPurple>
+                  <LiPurple>Likely to explore other protocols</LiPurple>
+                </Ul>
+              </Wrapper>
+            </LastSectionBox>
+            <LastSectionBox>
+              <LastSectionBoxImg src={Lightning} />
+              <Wrapper>
+                <LastSectionBoxTitle>On-Chain Communication</LastSectionBoxTitle>
+                <LastSectionBoxDesc>Getting in touch with your users does not have to be a challenge. With Web3Analytic:
+                </LastSectionBoxDesc>
+                <br/>
+                <Ul>
+                  <LiOrange><b>Send critical updates.</b> Message your community members so they don’t miss important notification.</LiOrange>
+                  <LiOrange><b>Get user feedback.</b> Build exactly for your user&apos;s needs!</LiOrange>
+                  <LiOrange><b>Find new users.</b> Share unlockable NFTs to encourage protocol engagement. </LiOrange>
+                </Ul>
+              </Wrapper>
+            </LastSectionBox>
+          </LastSection>
+        </ProductWrapper>
         <SectionWrapper>
           <SectionImg src={Research} />
           <SectionData>
-            <SectionTitle>Downside protection that&apos;s easy to use</SectionTitle>
-            <SectionDesc>Hedge your positions with options. Build your safety net today.
+            <SectionTitle>Who are we?</SectionTitle>
+            <SectionDesc>We are a team at the intersection of Web3 and AI, with a mix of native web3 builders and almost a decade of machine learning expertise. 
+            </SectionDesc>
+            <SectionDesc>If you&apos;re interested in learning more or are excited about our vision, please reach out!
             </SectionDesc>
           </SectionData>
         </SectionWrapper>
-        <LastSection>
-          <LastSectionBox>
-            <LastSectionBoxImg src={Defi} />
-            <Wrapper>
-              <LastSectionBoxTitle>Build cutting-edge technology in DeFi</LastSectionBoxTitle>
-              <LastSectionBoxDesc>Make composability and capital efficiency first class citizens in DeFi.
-              </LastSectionBoxDesc>
-            </Wrapper>
-            <A href="https://twitter.com/Paretoxyz">
-              <Button>Learn More</Button>
-            </A>
-          </LastSectionBox>
-          <LastSectionBox>
-            <LastSectionBoxImg src={Pareto} />
-            <Wrapper>
-              <LastSectionBoxTitle>Join the Pareto Community</LastSectionBoxTitle>
-              <LastSectionBoxDesc>Build the future of on-chain options with us.
-              </LastSectionBoxDesc>
-            </Wrapper>
-            <A href="https://twitter.com/Paretoxyz">
-              <Button>Learn More</Button>
-            </A>
-          </LastSectionBox>
-        </LastSection>
         <SignUpSection>
           <SignUpTitle>Sign up for Our Mailing List</SignUpTitle>
           <InputWrapper>

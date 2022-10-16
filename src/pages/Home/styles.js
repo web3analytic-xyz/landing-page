@@ -1,9 +1,39 @@
 import styled from 'styled-components';
 import { devices } from '../../helpers/styles';
+import EllipsePurple from '../../assets/images/ellipse-purple.png';
+import EllipseOrange from '../../assets/images/ellipse-orange.png';
 
 export const Div = styled.div`
     display: grid;
-    gap: 80px;
+    gap: 120px;
+`;
+
+export const Ul = styled.ul`
+  font-size: 24px;
+  align-items: left;
+  text-align: left;
+  margin-top: 20px;
+`;
+export const LiPurple = styled.li`
+  margin-bottom: 10px;
+  list-style: none;
+  content: '';
+  display: inline-block;
+  background-image: url(${EllipsePurple});
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+`;
+
+export const LiOrange = styled.li`
+  margin-bottom: 25px;
+  list-style: none;
+  content: '';
+  display: inline-block;
+  background-image: url(${EllipseOrange});
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
 `;
 
 export const HomeHeaderWrapper = styled.div`
@@ -48,11 +78,15 @@ export const SectionImg = styled.img`
     };
 `;
 
+export const ProductWrapper = styled.div`
+    gap: 100px;
+`;
+
 export const SectionWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
     @media ${devices.tablet} {
         grid-template-columns: 1fr 1fr;
     };
@@ -160,9 +194,9 @@ export const Value = styled.p`
 export const LastSection = styled.div`
     display: grid;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 80px;
     grid-template-columns: 1fr;
-    gap: 80px;
+    gap: 50px;
     width: 100%;
     @media ${devices.mobileL} {
         width: 85%;
@@ -177,8 +211,8 @@ export const LastSection = styled.div`
         gap: 70px;
     }
     @media ${devices.laptopL} {
-        width: 85%;
-        gap: 300px;
+        width: 90%;
+        gap: 200px;
     };
 
 `;
@@ -187,6 +221,9 @@ export const LastSectionBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     & > button {
         margin-top: auto;
     }
@@ -200,12 +237,12 @@ export const LastSectionBoxImg = styled.img`
     width: 120px;
     height: 120px;
     @media ${devices.tablet} {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
     @media ${devices.laptopL} {
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
     }
 `;
 
@@ -237,7 +274,8 @@ export const LastSectionBoxTitle = styled.h1`
     }
 `;
 export const LastSectionBoxDesc = styled.p`
-    text-align: center;
+    font-size: 24px;
+    text-align: left;
 `;
 
 export const SignUpSection = styled.div`

@@ -12,7 +12,7 @@ const Footer = () => (
     <Container disableYPaddings>
       <Grid>
         <CopyRight>
-          <CopyRightTitle>Pareto Labs</CopyRightTitle>
+          <CopyRightTitle>Web3Analytic</CopyRightTitle>
           <CopyRightDesc>
             Copyright &#169; Pareto Labs 2022.
             <span style={{ marginTop: '5px', display: 'block' }}> All rights reserved</span>
@@ -28,8 +28,8 @@ const Footer = () => (
         </List>
         <Contact>
           <Icons>
-            <A href="https://github.com/pareto-xyz"><GithubIcon /></A>
-            <A href="https://twitter.com/Paretoxyz"><TwitterIcon /></A>
+            <A href="https://github.com/web3-analytic"><GithubIcon /></A>
+            <A href="https://twitter.com/ParetoAnalytics"><TwitterIcon /></A>
             <A href="mailto:team@paretolabs.xyz"><MessageIcon /></A>
           </Icons>
           <ListITitle>Get In Touch</ListITitle>

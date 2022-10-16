@@ -10,9 +10,6 @@ import {
 import App from './components/Root/App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyle from './helpers/styles';
-import Contact from './pages/Contact/Contact';
-import Research from './pages/Research/Research';
-import Community from './pages/Community/Community';
 import Home from './pages/Home/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,9 +20,6 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="research" element={<Research />} />
-          <Route path="community" element={<Community />} />
-          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
