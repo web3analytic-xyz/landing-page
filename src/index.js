@@ -18,9 +18,9 @@ root.render(
     <GlobalStyle />
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="/landing-page" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/landing-page" />} />
         </Route>
       </Routes>
     </BrowserRouter>
